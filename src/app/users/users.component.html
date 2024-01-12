@@ -1,0 +1,10 @@
+<div class="container-fluid">
+    <div class="row">
+        <app-add-new-user (onuserName)="addName($event)"  ></app-add-new-user>
+        <div>
+            <h3>Users List</h3>
+            <app-user *ngFor="let user of userList" [user]="user"></app-user>
+        </div>
+
+    </div>
+</div>
